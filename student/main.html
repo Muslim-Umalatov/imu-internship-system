@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Üniversite Staj Yönetim Sistemi</title>
+
+  <link href="../css/grid.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+  <!-- Font "Inter" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="main.html">
+      <img src="../img/imu-logo.png" alt="IMU Logo" class="imu-logo" />
+    </a>
+    <nav class="header-nav">
+      <a href="settings.html" class="header-nav-text">
+        <i class="ph ph-user-circle header-icon"></i>
+        <span>Batuhan Yılmaz</span>
+      </a>
+
+      <a href="../admin/main.html" class="header-nav-text">
+        <i class="ph ph-user-circle-gear header-icon"></i>
+        <span>Admin Paneli</span>
+      </a>
+
+      <a href="../login/login.html" class="header-nav-text">
+        <i class="ph ph-sign-out header-icon"></i>
+        <span>Çıkış Yap</span>
+      </a>
+    </nav>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="#" class="nav-block menu-block" onclick="toggleNav();">
+      <i class="ph ph-list menu-icon"></i>
+      <span class="nav-text">Menü</span>
+    </a>
+    <a href="main.html" class="nav-block active-block">
+      <i class="ph ph-house-line menu-icon active-icon"></i>
+      <span id="nav-text" class="nav-text">Ana sayfa</span>
+    </a>
+    <a href="application.html" class="nav-block">
+      <i class="ph ph-list-checks menu-icon"></i>
+      <span class="nav-text">Staj başvuru</span>
+    </a>
+    <a href="announcements.html" class="nav-block">
+      <i class="ph ph-bell menu-icon"></i>
+      <span>Duyurular</span>
+    </a>
+    <a href="documents.html" class="nav-block">
+      <i class="ph ph-file menu-icon"></i>
+      <span class="nav-text">Belgeler</span>
+    </a>
+    <a href="settings.html" class="nav-block">
+      <i class="ph ph-gear menu-icon"></i>
+      <span class="nav-text">Ayarlar</span>
+    </a>
+    <a href="faq.html" class="nav-block">
+      <i class="ph ph-question menu-icon"></i>
+      <span class="nav-text">SSS</span>
+    </a>
+  </nav>
+
+  <div class="heading-container">
+    <h1 class="heading-primary">Ana Sayfa</h1>
+  </div>
+
+  <main class="main">
+    <section class="main-container main-page">
+      <div class="current-internship">
+        <h2 class="heading-secondary">Mevcut Stajım</h2>
+
+        <ul class="current-list">
+          <li>
+            <h6 class="heading-senary">Staj tipi:</h6>
+            <p>Zorunlu Staj</p>
+          </li>
+          <li>
+            <h6 class="heading-senary">Başlangıç tarihi:</h6>
+            <p>04.08.2025</p>
+          </li>
+          <li>
+            <h6 class="heading-senary">Süre:</h6>
+            <p>20 iş günü</p>
+          </li>
+        </ul>
+
+        <div class="condition-container">
+          <h6 class="heading-senary condition-heading">Durum</h6>
+          <ul class="condition-list">
+            <li>
+              <i class="ph ph-check table-icon-small condition approval"></i>
+              <p class="condition-text-small">Belge onaylanmıştır</p>
+            </li>
+            <li>
+              <i class="ph ph-exclamation-mark table-icon-small condition consideration"></i>
+              <p class="condition-text-small">Belge değerlendirme aşamasında</p>
+            </li>
+            <li>
+              <i class="ph ph-upload table-icon-small condition consideration"></i>
+              <p class="condition-text-small">Belge henüz yüklenmemiştir</p>
+            </li>
+            <li>
+              <i class="ph ph-x table-icon-small condition rejection"></i>
+              <p class="condition-text-small">Belge reddedilmiştir</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="schedule-container">
+        <h5 class="heading-quinary">Takvim</h5>
+
+        <div>
+          <div class="schedule-month-container">
+            <i class="ph ph-caret-left schedule-table-icon"></i>
+            <h3 class="heading-tertiary">Ağustos</h3>
+            <i class="ph ph-caret-right schedule-table-icon"></i>
+          </div>
+
+          <table class="schedule-table">
+            <thead class="schedule-thead">
+              <tr>
+                <th>Pzt</th>
+                <th>Sal</th>
+                <th>Çar</th>
+                <th>Per</th>
+                <th>Cum</th>
+                <th>Cmt</th>
+                <th>Paz</th>
+              </tr>
+            </thead>
+            <tbody class="schedule-tbody">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+
+              <tr>
+                <td class="completed-day">4</td>
+                <td class="completed-day">5</td>
+                <td class="completed-day">6</td>
+                <td class="completed-day">7</td>
+                <td class="completed-day">8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+
+              <tr>
+                <td class="completed-day">11</td>
+                <td class="completed-day">12</td>
+                <td class="completed-day today">13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+              </tr>
+
+              <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+              </tr>
+
+              <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="date-color">
+          <div class="color"></div>
+          <p>Tamamladığı günler</p>
+        </div>
+
+        <div class="date-color">
+          <div class="color current-date"></div>
+          <p>Bugün</p>
+        </div>
+      </div>
+
+      <div class="primary-documents">
+        <h5 class="heading-quinary">Başlatma Belgeleri</h5>
+        <table class="table table-main">
+          <thead class="thead main-thead">
+            <tr>
+              <th>#</th>
+              <th>Belge Adı</th>
+              <th>Durum</th>
+              <th>Yükle</th>
+              <th>Sil</th>
+              <th>İndir</th>
+            </tr>
+          </thead>
+
+          <tbody class="tbody main-tbody">
+            <tr>
+              <td>1</td>
+              <td>Zorunlu Staj Formu</td>
+              <td><i class="ph ph-check table-icon condition approval"></i></td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-upload table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-trash table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" download href="#" title="Document">
+                  <i class="ph ph-download table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>İşsizlik Fonu Katkısı Formu</td>
+              <td><i class="ph ph-check table-icon condition approval"></i></td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-upload table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-trash table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" download href="#" title="Document">
+                  <i class="ph ph-download table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Staj Sağlık Beyannamesi</td>
+              <td><i class="ph ph-x table-icon condition rejection"></i></td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-upload table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-trash table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" download href="#" title="Document">
+                  <i class="ph ph-download table-icon"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="final-documents">
+        <h5 class="heading-quinary">Bitirme Belgeleri</h5>
+        <table class="table table-main">
+          <thead class="thead main-thead">
+            <tr>
+              <th>#</th>
+              <th>Belge Adı</th>
+              <th>Durum</th>
+              <th>Yükle</th>
+              <th>Sil</th>
+              <th>İndir</th>
+            </tr>
+          </thead>
+
+          <tbody class="tbody main-tbody">
+            <tr>
+              <td>1</td>
+              <td>Staj Raporu</td>
+              <td><i class="ph ph-upload table-icon condition consideration"></i></td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-upload table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-trash table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" download href="#" title="Document">
+                  <i class="ph ph-download table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Staj Değerlendirme Belgesi</td>
+              <td><i class="ph ph-exclamation-mark table-icon condition consideration"></i></td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-upload table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-trash table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" download href="#" title="Document">
+                  <i class="ph ph-download table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Staj Puantaj Cetveli</td>
+              <td><i class="ph ph-check table-icon condition approval"></i></td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-upload table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" href="#" title="Document">
+                  <i class="ph ph-trash table-icon"></i>
+                </a>
+              </td>
+              <td>
+                <a class="table-button" download href="#" title="Document">
+                  <i class="ph ph-download table-icon"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="main-container">
+      <h2 class="heading-secondary">Geçmiş Stajlarım</h2>
+      <table class="table table-main">
+        <thead class="thead previous-thead">
+          <tr>
+            <th>#</th>
+            <th>Staj Tipi</th>
+            <th>Tarih</th>
+            <th>Rapor</th>
+            <th>Not</th>
+          </tr>
+        </thead>
+
+        <tbody class="tbody previous-tbody">
+          <tr>
+            <td>1</td>
+            <td>Zorunlu Staj</td>
+            <td>08.07.2024 - 04.08.2024</td>
+            <td><a class="link table-link" href="#" download title="Document">z-staj-raporu.pdf</a></td>
+            <td>YT</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Gönüllü Staj</td>
+            <td>10.08.2024 - 05.09.2024</td>
+            <td><a class="link table-link" href="#" download title="Document">g-staj-raporu.pdf</a></td>
+            <td>YZ</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <aside class="aside aside-main">
+    <h2 class="heading-secondary aside-heading">Bilgilerim</h2>
+
+    <div class="aside-info-container">
+      <h3 class="heading-quinary">Kişisel bilgileri</h3>
+      <ul class="info-list">
+        <li>
+          <h6 class="heading-senary">İsim Soyisim</h6>
+          <p class="aside-text">Batuhan Yılmaz</p>
+        </li>
+        <li>
+          <h6 class="heading-senary">İletişim bilgileri</h6>
+          <p class="aside-text">batuhanyilmaz@hotmail.com</p>
+        </li>
+        <li>
+          <h6 class="heading-senary">Telefon</h6>
+          <p class="aside-text">+90 (540) 400-20-20</p>
+        </li>
+        <li>
+          <h6 class="heading-senary">Doğum tarihi</h6>
+          <p class="aside-text">30.04.2000</p>
+        </li>
+        <li>
+          <h6 class="heading-senary">Kayıt tarihi</h6>
+          <p>30.07.2025</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="aside-info-container">
+      <h3 class="heading-quinary">Okul bilgileri</h3>
+      <ul class="info-list">
+        <li>
+          <h6 class="heading-senary">Fakülte</h6>
+          <p class="aside-text">Mühendislik ve Doğa Bilimleri Fakültesi</p>
+        </li>
+        <li>
+          <h6 class="heading-senary">Bölüm</h6>
+          <p class="aside-text">Bilgisayar Mühendisliği</p>
+        </li>
+        <li>
+          <h6 class="heading-senary">Okul numarası</h6>
+          <p class="aside-text">2414002020</p>
+        </li>
+        <li>
+          <h6 class="heading-senary">Sınıf numarası</h6>
+          <p class="aside-text">3</p>
+        </li>
+      </ul>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

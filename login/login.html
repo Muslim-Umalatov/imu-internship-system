@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Üniversite Staj Yönetim Sistemi</title>
+
+  <link href="../css/grid.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+  <!-- Font "Inter" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<header class="login-header">
+  <div>
+    <a href="#" class="header-side-list-item">
+      <i class="ph ph-list login-header-icon"></i>
+      <small class="small-text">Menu</small>
+    </a>
+  </div>
+  <ul class="header-side-list">
+    <li>
+      <a href="#" class="header-side-list-item">
+        <small class="small-text">Hakkımızda</small>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="header-side-list-item">
+        <small class="small-text">Duyurular</small>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="header-side-list-item">
+        <i class="ph-fill ph-globe-hemisphere-west login-header-icon"></i>
+        <small class="small-text">Dil</small>
+      </a>
+    </li>
+  </ul>
+</header>
+
+<body class="login-body">
+  <section class="login-container">
+    <img src="../img/imu-logo.png" class="login-logo" alt="IMU Logo" />
+    <div class="input-container">
+      <label class="input-label login-label-text" for="username">Kullanıcı Adı</label>
+      <input type="text" id="username" name="username" class="input-field" placeholder="Kullanıcı Adı" />
+    </div>
+
+    <div class="input-container">
+      <label class="input-label login-label-text" for="password">Şifre</label>
+      <input type="text" id="password" name="password" class="input-field" placeholder="Şifre" />
+      <a href="password-reset.html" class="link login-link-reset login-label-text">Şifremi unuttum</a>
+    </div>
+
+    <div class="button-container">
+      <a href="../student/main.html" class="button">
+        <span class="login-button-label">Giriş yap</span>
+      </a>
+
+      <a href="https://giris.turkiye.gov.tr/Giris/gir?oauthClientId=35d0558c-56f9-4504-86e9-cc41714e8e6a&continue=https%3A%2F%2Fgiris.turkiye.gov.tr%2FOAuth2AuthorizationServer%2FAuthorizationController%3Fresponse_type%3Dcode%26client_id%3D35d0558c-56f9-4504-86e9-cc41714e8e6a%26state%3Drhv5ykayvjevm0mnucqpsqg2%26scope%3DKimlik-Dogrula%253BAd-Soyad%26redirect_uri%3Dhttps%253A%252F%252Fubys.medeniyet.edu.tr%252Fedevlet%26code_challenge_method%3DS256%26code_challenge%3DCZ-T3xWPoVjJ_Ue-nx7sRh3zxiOXPRQ8GBMGFPDqDW0" class="button button-e-devlet">
+        <img src="../img/login/e-devlet.png" class="e-devlet-icon"/>
+        <span class="login-button-label">e-Devlet ile giriş</span>
+      </a>
+    </div>
+
+  </section>
+  <section class="additional-login-container">
+    <p class="login-label-text">Hesabınız yok mu?</p>
+    <a href="sign-up-log-in.html" class="link login-label-text">Kayıt ol</a>
+  </section>
+
+  <footer class="login-footer">
+    <small class="small-text"><strong>Üniversite Staj Yönetim Sistemi &copy; 2025 <abbr
+          class="abbreviation">ÜSYS</abbr></strong>. Tüm Hakları Saklıdır.</small>
+    <ul class="footer-side-list">
+      <li>
+        <a href="https://ubys.medeniyet.edu.tr/Enterprise/OrganizationManagement/PhoneBook/Index"
+          class="footer-side-list-item">
+          <i class="ph ph-phone login-footer-icon"></i>
+          <small class="small-text">Telefon Rehberi</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.medeniyet.edu.tr/tr" class="footer-side-list-item">
+          <i class="ph ph-link login-footer-icon"></i>
+          <small class="small-text">Web Sayfası</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://ubys.medeniyet.edu.tr/HelpAndSupport/Index" class="footer-side-list-item">
+          <i class="ph ph-info login-footer-icon"></i>
+          <small class="small-text">ÜBYS Destek</small>
+        </a>
+      </li>
+      <li>
+        <a href="https://ubys.medeniyet.edu.tr/BIP/BusinessIntelligence/Home/Index" class="footer-side-list-item">
+          <i class="ph ph-chart-line login-footer-icon"></i>
+          <small class="small-text">Kurumsal Değerlendirme</small>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>

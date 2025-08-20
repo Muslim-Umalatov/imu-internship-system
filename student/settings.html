@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Üniversite Staj Yönetim Sistemi</title>
+
+  <link href="../css/grid.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+  <!-- Font "Inter" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="main.html">
+      <img src="../img/imu-logo.png" alt="IMU Logo" class="imu-logo" />
+    </a>
+    <nav class="header-nav">
+      <a href="settings.html" class="header-nav-text">
+        <i class="ph ph-user-circle header-icon"></i>
+        <span>Batuhan Yılmaz</span>
+      </a>
+      
+      <a href="../admin/main.html" class="header-nav-text">
+        <i class="ph ph-user-circle-gear header-icon"></i>
+        <span>Admin Paneli</span>
+      </a>
+
+      <a href="../login/login.html" class="header-nav-text">
+        <i class="ph ph-sign-out header-icon"></i>
+        <span>Çıkış Yap</span>
+      </a>
+    </nav>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="#" class="nav-block menu-block" onclick="toggleNav();">
+      <i class="ph ph-list menu-icon menu"></i>
+      <span>Menü</span>
+    </a>
+    <a href="main.html" class="nav-block">
+      <i class="ph ph-house-line menu-icon"></i>
+      <span>Ana sayfa</span>
+    </a>
+    <a href="application.html" class="nav-block">
+      <i class="ph ph-list-checks menu-icon"></i>
+      <span>Staj başvuru</span>
+    </a>
+    <a href="announcements.html" class="nav-block">
+      <i class="ph ph-bell menu-icon"></i>
+      <span>Duyurular</span>
+    </a>
+    <a href="documents.html" class="nav-block">
+      <i class="ph ph-file menu-icon"></i>
+      <span>Belgeler</span>
+    </a>
+    <a href="settings.html" class="nav-block active-block">
+      <i class="ph ph-gear menu-icon  active-icon"></i>
+      <span>Ayarlar</span>
+    </a>
+    <a href="faq.html" class="nav-block">
+      <i class="ph ph-question menu-icon"></i>
+      <span>SSS</span>
+    </a>
+  </nav>
+
+  <div class="heading-container">
+    <h1 class="heading-primary">Ayarlar</h1>
+  </div>
+
+  <main class="main">
+    <section class="main-container">
+      <h2 class="heading-secondary">Kişisel Bilgileri</h2>
+
+      <form class="settings-container" action="" method="">
+        <div class="input-container settings-personal-item-1">
+          <label class="input-label" for="first-name">İsim</label>
+          <input type="text" id="first-name" name="firstName" class="input-field" placeholder="İsim" />
+        </div>
+
+        <div class="input-container settings-personal-item-2">
+          <label class="input-label" for="last-name">Soyisim</label>
+          <input type="text" id="last-name" name="lastName" class="input-field" placeholder="Soyisim" />
+        </div>
+
+        <div class="input-container settings-personal-item-3">
+          <label class="input-label" for="email">Email</label>
+          <input type="email" id="email" name="email" class="input-field" placeholder="example@mail.com" />
+        </div>
+
+        <div class="input-container settings-personal-item-4">
+          <label class="input-label" for="phone">Telefon numarası</label>
+          <input type="tel" id="phone" name="phone" class="input-field" placeholder="(500) 000-00-00" />
+        </div>
+
+        <div class="input-container settings-personal-item-5">
+          <label class="input-label" for="date-birth">Doğum</label>
+          <input type="date" id="date-birth" name="dateBirth" class="input-field" />
+        </div>
+
+        <button class="button settings-personal-item-6" value="Kaydet">
+          <i class="ph ph-floppy-disk-back button-icon"></i>
+          <span class="button-label">Kaydet</span>
+        </button>
+      </form>
+    </section>
+
+    <section class="main-container">
+      <h2 class="heading-secondary">Okul Bilgileri</h2>
+      <form class="settings-container">
+        <div class="input-container settings-college-item-1">
+          <label class="input-label" for="student-id">Oğrenci numarası</label>
+          <input type="text" id="student-id" name="studentId" class="input-field" placeholder="20120205010" />
+        </div>
+
+        <div class="input-container settings-college-item-2">
+          <label class="input-label" for="faculty">Fakülte</label>
+          <input type="text" id="faculty" name="faculty" class="input-field"
+            placeholder="Mühendislik ve Doğa Bilimleri Fakültesi" />
+        </div>
+
+        <div class="input-container settings-college-item-3">
+          <label for="study-year" class="input-label">Sınıf numarası</label>
+          <input type="text" id="study-year" name="studyYear" class="input-field" placeholder="2" />
+        </div>
+
+        <div class="input-container settings-college-item-4">
+          <label for="department" class="input-label">Bölüm</label>
+          <input type="text" id="department" name="department" class="input-field"
+            placeholder="Bilgisayar Mühendisliği" />
+        </div>
+
+        <button class="button settings-college-item-5" value="Kaydet">
+          <i class="ph ph-floppy-disk-back button-icon"></i>
+          <span class="button-label">Kaydet</span>
+        </button>
+      </form>
+    </section>
+
+    <section class="main-container">
+      <h2 class="heading-secondary">Güvenlik Bilgileri</h2>
+      <p class="settings-text">Şifrenizi değiştirmek için alanları doldurup aşağıdaki butona basabilirsiniz.</p>
+      <form class="settings-container">
+        <div class="input-container settings-security-item-1">
+          <label class="input-label" for="old-password">Eski şifre</label>
+          <input type="password" id="old-password" name="oldPassword" class="input-field" />
+        </div>
+
+        <div class="input-container settings-security-item-2">
+          <label for="new-password" class="input-label">Yeni şifre</label>
+          <input type="password" id="new-password" name="newPassword" class="input-field" />
+        </div>
+
+        <div class="input-container settings-security-item-3">
+          <label for="new-password-repeat" class="input-label">Yeni şifre tekrar</label>
+          <input type="password" id="new-password-repeat" name="newPasswordRepeate" class="input-field" />
+        </div>
+
+        <button class="button settings-security-item-4">
+          <i class="ph ph-key button-icon"></i>
+          <span class="button-label">Şifre değiştir</span>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

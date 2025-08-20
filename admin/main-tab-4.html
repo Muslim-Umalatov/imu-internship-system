@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMÜ Staj Sistemi</title>
+
+  <link href="../css/grid.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+  <!-- Font "Inter" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="main.html">
+      <img src="../img/imu-logo.png" alt="IMU Logo" class="imu-logo" />
+    </a>
+    <nav class="header-nav">
+      <a href="settings.html" class="header-nav-text">
+        <i class="ph ph-user-circle header-icon"></i>
+        <span>Muhammet Sinan Başarslan</span>
+      </a>
+
+      <a href="../student/main.html" class="header-nav-text">
+        <i class="ph ph-student header-icon"></i>
+        <span>Öğrenci Paneli</span>
+      </a>
+
+      <a href="../login/login.html" class="header-nav-text">
+        <i class="ph ph-sign-out header-icon"></i>
+        <span>Çıkış Yap</span>
+      </a>
+    </nav>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="#" class="nav-block menu-block" onclick="toggleNav();">
+      <i class="ph ph-list menu-icon"></i>
+      <span>Menü</span>
+    </a>
+    <a href="main.html" class="nav-block active-block">
+      <i class="ph ph-house-line menu-icon active-icon"></i>
+      <span>Ana sayfa</span>
+    </a>
+    <a href="authorized.html" class="nav-block">
+      <i class="ph ph-identification-card menu-icon"></i>
+      <span>Yetkili İşlemleri</span>
+    </a>
+    <a href="documents.html" class="nav-block">
+      <i class="ph ph-file menu-icon"></i>
+      <span>Belgeler</span>
+    </a>
+    <a href="settings.html" class="nav-block">
+      <i class="ph ph-gear menu-icon"></i>
+      <span>Ayarlar</span>
+    </a>
+    <a href="faq.html" class="nav-block">
+      <i class="ph ph-question menu-icon"></i>
+      <span>SSS</span>
+    </a>
+  </nav>
+
+  <div class="heading-container">
+    <h1 class="heading-primary">Ana Sayfa</h1>
+  </div>
+
+  <main class="main">
+    <section class="main-container">
+      <div class="admin-main">
+        <div class="admin-buttons-container">
+          <a href="main.html" class="button active">
+            <i class="ph ph-users-three button-icon "></i>
+            <span class="button-label">Kayıtlı öğrenciler</span>
+          </a>
+
+          <a href="main-announce.html" class="button">
+            <i class="ph ph-megaphone-simple button-icon"></i>
+            <span class="button-label">Duyurular</span>
+          </a>
+
+          <a href="main-schedule.html" class="button">
+            <i class="ph ph-calendar-dots button-icon"></i>
+            <span class="button-label">Takvim</span>
+          </a>
+        </div>
+
+        <div class="students-info-container">
+          <div>
+            <h4 class="heading-quinary info-heading">Tarih</h4>
+            <p>24.07.2025</p>
+            <p>Perşembe</p>
+          </div>
+          <div>
+            <h4 class="heading-quinary info-heading">Staj İstatistikleri</h4>
+            <p>Sistemde kayıtlı olan öğrenciler: 129</p>
+            <p>Başvuru yapmayan öğrenci sayısı: 29</p>
+            <p>Bekleyen başvuru sayısı: 57</p>
+            <p>Bitirmeyi bekleyen öğrenci sayısı: 43</p>
+          </div>
+        </div>
+
+        <div class="admin-buttons-container">
+          <a href="main.html" class="button">
+            <span class="button-label">Tüm öğrenciler</span>
+          </a>
+
+          <a href="main-tab-2.html" class="button">
+            <span class="button-label">Başvuru yapmayan öğrenciler</span>
+          </a>
+
+          <a href="main-tab-3.html" class="button">
+            <span class="button-label">Başvuru yapan öğrenciler</span>
+          </a>
+
+          <a href="main-tab-4.html" class="button active">
+            <span class="button-label">Stajı bitirmeyi bekleyen öğrenciler</span>
+          </a>
+        </div>
+
+        <table class="table table-main">
+          <thead class="thead admin-thead">
+            <tr>
+              <th>#</th>
+              <th>İsim ve Soyisim</th>
+              <th>Okul numarası</th>
+              <th>Profil incele</th>
+            </tr>
+          </thead>
+
+          <tbody class="tbody admin-tbody">
+            <tr>
+              <td>1</td>
+              <td>Batuhan Yılmaz</td>
+              <td>21120205401</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Ufuk Yağmur</td>
+              <td>21120205402</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Muhammet Karadağ</td>
+              <td>21120205403</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>Fatma Kaçmaz</td>
+              <td>21120205404</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Cristiano Ronaldo</td>
+              <td>21120205405</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>Khasan Khasiev</td>
+              <td>21120205406</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>Aleksandr Abashev</td>
+              <td>21120205407</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>Nikita Kozirev</td>
+              <td>21120205408</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td>Mansur Ismailov</td>
+              <td>21120205409</td>
+              <td>
+                <a class="table-button" href="#">
+                  <i class="ph ph-magnifying-glass table-icon"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <aside class="aside">
+    <h2 class="heading-secondary">Belge durumu</h2>
+    <div class="condition-container">
+      
+      <ul class="condition-list">
+        <li>
+          <i class="ph ph-check table-icon condition approval"></i>
+          <p>Belge onaylanmıştır</p>
+        </li>
+        <li>
+          <i class="ph ph-exclamation-mark table-icon condition consideration"></i>
+          <p>Belge değerlendirme aşamasında</p>
+        </li>
+        <li>
+          <i class="ph ph-upload table-icon condition consideration"></i>
+          <p>Belge henüz yüklenmemiştir</p>
+        </li>
+        <li>
+          <i class="ph ph-x table-icon condition rejection"></i>
+          <p>Belge reddedilmiştir</p>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

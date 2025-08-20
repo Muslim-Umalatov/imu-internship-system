@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMÜ Staj Sistemi</title>
+
+  <link href="../css/grid.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+
+  <!-- Font "Inter" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="main.html">
+      <img src="../img/imu-logo.png" alt="IMU Logo" class="imu-logo" />
+    </a>
+    <nav class="header-nav">
+      <a href="settings.html" class="header-nav-text">
+        <i class="ph ph-user-circle header-icon"></i>
+        <span>Muhammet Sinan Başarslan</span>
+      </a>
+
+      <a href="../student/main.html" class="header-nav-text">
+        <i class="ph ph-student header-icon"></i>
+        <span>Öğrenci Paneli</span>
+      </a>
+
+      <a href="../login/login.html" class="header-nav-text">
+        <i class="ph ph-sign-out header-icon"></i>
+        <span>Çıkış Yap</span>
+      </a>
+    </nav>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="#" class="nav-block menu-block" onclick="toggleNav();">
+      <i class="ph ph-list menu-icon"></i>
+      <span>Menü</span>
+    </a>
+    <a href="main.html" class="nav-block active-block">
+      <i class="ph ph-house-line menu-icon active-icon"></i>
+      <span>Ana sayfa</span>
+    </a>
+    <a href="authorized.html" class="nav-block">
+      <i class="ph ph-identification-card menu-icon"></i>
+      <span>Yetkili İşlemleri</span>
+    </a>
+    <a href="documents.html" class="nav-block">
+      <i class="ph ph-file menu-icon"></i>
+      <span>Belgeler</span>
+    </a>
+    <a href="settings.html" class="nav-block">
+      <i class="ph ph-gear menu-icon"></i>
+      <span>Ayarlar</span>
+    </a>
+    <a href="faq.html" class="nav-block">
+      <i class="ph ph-question menu-icon"></i>
+      <span>SSS</span>
+    </a>
+  </nav>
+
+  <div class="heading-container">
+    <h1 class="heading-primary">Ana Sayfa</h1>
+  </div>
+
+  <main class="main">
+    <section class="main-container">
+      <div class="admin-main">
+        <div class="admin-buttons-container">
+          <a href="main.html" class="button" value="Students">
+            <i class="ph ph-users-three button-icon "></i>
+            <span class="button-label">Kayıtlı öğrenciler</span>
+          </a>
+
+          <a href="main-announce.html" class="button" value="Make an announcement">
+            <i class="ph ph-megaphone-simple button-icon"></i>
+            <span class="button-label">Duyurular</span>
+          </a>
+
+          <a href="main-schedule.html" class="button active" value="Schedule">
+            <i class="ph ph-calendar-dots button-icon"></i>
+            <span class="button-label">Takvim</span>
+          </a>
+        </div>
+
+        <div class="admin-schedule">
+          <div class="schedule-month-container">
+            <i class="ph ph-caret-left schedule-table-icon"></i>
+            <h3 class="heading-tertiary">Ağustos</h3>
+            <i class="ph ph-caret-right schedule-table-icon"></i>
+          </div>
+
+          <table class="schedule-table">
+            <thead class="schedule-thead">
+              <tr>
+                <th>Pzt</th>
+                <th>Sal</th>
+                <th>Çar</th>
+                <th>Per</th>
+                <th>Cum</th>
+                <th>Cmt</th>
+                <th>Paz</th>
+              </tr>
+            </thead>
+            <tbody class="schedule-tbody">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+
+              <tr>
+                <td>11</td>
+                <td>12</td>
+                <td class="completed-day today">13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+              </tr>
+
+              <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+              </tr>
+
+              <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
