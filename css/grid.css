@@ -46,14 +46,22 @@ nav {
   margin: 0 1.2rem 0 0;
 }
 
+/* FAQ SECTION START */
+
 .faq-topic-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 4.8rem;
-  row-gap: 1.2rem;
+  grid-template-rows: repeat(3, 10rem);
+  column-gap: 3.2rem;
+  row-gap: 0.4rem;
+
+  align-items: center;
+  justify-items: center;
 
   margin-top: 1.6rem;
 }
+
+/* FAQ SECTION END */
 
 .settings-container {
   display: grid;

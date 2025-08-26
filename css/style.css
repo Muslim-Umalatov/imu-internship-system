@@ -399,7 +399,9 @@ td {
   align-items: center;
 }
 
-/* FREQUENTLY ASKED QUESTIONS SECTION */
+/* DOCUMENTS SECTION END */
+
+/* FREQUENTLY ASKED QUESTIONS SECTION START */
 
 .faq-warning {
   display: flex;
@@ -417,54 +419,79 @@ td {
   display: flex;
   flex-direction: row;
   gap: 1.6rem;
-  align-items: center;
-  justify-content: space-between;
 
-  border-radius: 8px;
-
-  width: 100%;
-}
-
-.faq-topic-small {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
   border-radius: 0.8rem;
-  height: 8rem;
-
-  margin-bottom: 1.6rem;
+  transition: all 0.3s;
+  width: 100%;
 }
 
-.faq-topic-blue {
+.faq-image {
+  height: 8rem;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.faq-topic > h3 {
+  transition: all 0.3s;
+}
+
+.faq-topic:hover > h3 {
+  font-size: 2.1rem;
+}
+
+.faq-topic:hover > .faq-image,
+.faq-topic:hover > .faq-topic-button {
+  height: 8.8rem;
+}
+
+.faq-topic:hover {
+  width: 105%;
+}
+
+.faq-small-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+
+  justify-items: center;
+  align-items: center;
+
+  height: 40rem;
+}
+
+.faq-topic-blue:link,
+.faq-topic-blue:visited {
   background-color: #cff5f4;
   border: 0.2rem solid #0fcfc8;
 }
 
-.faq-topic-white {
+.faq-topic-blue:link > .faq-topic-button-blue,
+.faq-topic-blue:visited > .faq-topic-button-blue {
+  background-color: #0fcfc8;
+}
+
+.faq-topic-blue:hover > .faq-topic-button-blue,
+.faq-topic-blue:active > .faq-topic-button-blue {
+  background-color: #0ebab4;
+}
+
+.faq-topic-white:link,
+.faq-topic-white:visited {
   background-color: #ffffff;
   border: 0.2rem solid #bbbbbb;
 }
 
-/* .faq-topic-process {
-  background-color: #ffe066;
-  border: 0.2rem solid #fab005;
+.faq-topic-white:link > .faq-topic-button-white,
+.faq-topic-white:visited > .faq-topic-button-white {
+  background-color: #bbbbbb;
 }
 
-.faq-topic-assessment {
-  background-color: #dbe4ff;
-  border: 0.2rem solid #748ffc;
-}
-
-.faq-topic-health {
-  background-color: #ff8787;
-  border: 0.2rem solid #e03131;
-} */
-
-.faq-image {
-  width: 8rem;
-  border-radius: 6px;
+.faq-topic-white:hover > .faq-topic-button-white,
+.faq-topic-white:active > .faq-topic-button-white {
+  background-color: #999999;
 }
 
 .faq-heading {
@@ -479,71 +506,11 @@ td {
   justify-content: center;
 
   border-radius: 0 0.5rem 0.5rem 0;
-  transition: 0.2s;
 
   width: 4.5rem;
-  height: 100%;
+  height: 8rem;
+  transition: all 0.3s;
 }
-
-.faq-topic-button-blue:link,
-.faq-topic-button-blue:visited {
-  background-color: #0fcfc8;
-}
-
-.faq-topic-button-blue:hover,
-.faq-topic-button-blue:active {
-  background-color: #0ebab4;
-}
-
-.faq-topic-button-white:link,
-.faq-topic-button-white:visited {
-  background-color: #bbbbbb;
-}
-
-.faq-topic-button-white:hover,
-.faq-topic-button-white:active {
-  background-color: #999999;
-}
-
-/* .faq-topic-button-place:link,
-.faq-topic-button-place:visited {
-  background-color: #82c91e;
-}
-
-.faq-topic-button-place:hover,
-.faq-topic-button-place:active {
-  background-color: #75b51b;
-}
-
-.faq-topic-button-process:link,
-.faq-topic-button-process:visited {
-  background-color: #fab005;
-}
-
-.faq-topic-button-process:hover,
-.faq-topic-button-process:active {
-  background-color: #e19e05;
-}
-
-.faq-topic-button-assessment:link,
-.faq-topic-button-assessment:visited {
-  background-color: #748ffc;
-}
-
-.faq-topic-button-assessment:hover,
-.faq-topic-button-assessment:active {
-  background-color: #6881e3;
-}
-
-.faq-topic-button-health:link,
-.faq-topic-button-health:visited {
-  background-color: #e03131;
-}
-
-.faq-topic-button-health:hover,
-.faq-topic-button-health:active {
-  background-color: #ca2c2c;
-} */
 
 .faq-topic-icon {
   color: #ffffff;
@@ -559,7 +526,7 @@ td {
   font-size: 1.8rem;
 }
 
-/* DOCUMENTS SECTION END */
+/* FREQUENTLY ASKED QUESTIONS SECTION START */
 
 /* SETTINGS SECTION START */
 
@@ -597,7 +564,7 @@ td {
 
 /* SETTINGS SECTION END*/
 
-/* MESSAGES SECTION START */
+/* ANNOUNCEMENTS SECTION START */
 
 .send-container {
   display: flex;
@@ -679,7 +646,7 @@ td {
   align-items: center;
 }
 
-/* MESSAGES SECTION END */
+/* ANNOUNCEMENTS SECTION END */
 
 /* APPLICATION SECTION START */
 
@@ -1187,8 +1154,6 @@ td {
 }
 
 /* ADMIN STUDENT-DETAILS SECTION END */
-
-
 
 /* LOGIN PAGE START */
 .login-body,
